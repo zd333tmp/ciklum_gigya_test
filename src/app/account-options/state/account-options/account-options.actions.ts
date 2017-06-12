@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { AccountOptions } from '../shared/account-options.model';
+import { AccountOptions } from '../../shared/account-options.model';
 
 export const GET_ACCOUNT_OPTIONS = '[Account options] Get';
 export const GET_ACCOUNT_OPTIONS_SUCCESS = '[Account options] Get success';
@@ -20,14 +20,14 @@ export class GetAccountOptionsAction implements Action {
  */
 export class GetAccountOptionsSuccessAction implements Action {
   readonly type = GET_ACCOUNT_OPTIONS_SUCCESS;
-  constructor(public payload: Action) { }
+  constructor(public payload: AccountOptions) { }
 }
 /**
  * Get account options finished with error action
  */
 export class GetAccountOptionsErrorAction implements Action {
   readonly type = GET_ACCOUNT_OPTIONS_ERROR;
-  constructor(public payload: { message: string }) { }
+  constructor(public payload: { error: string }) { }
 }
 
 /**
@@ -41,18 +41,18 @@ export class UpdateAccountOptionsAction implements Action {
  */
 export class UpdateAccountOptionsSuccessAction implements Action {
   readonly type = UPDATE_ACCOUNT_OPTIONS_SUCCESS;
-  constructor(public payload: Action) { }
+  constructor(public payload: AccountOptions) { }
 }
 /**
  * Update account options finished with error action
  */
 export class UpdateAccountOptionsErrorAction implements Action {
   readonly type = UPDATE_ACCOUNT_OPTIONS_ERROR;
-  constructor(public payload: { message: string }) { }
+  constructor(public payload: { error: string }) { }
 }
 
 /**
  * All available sub-state action creators type union
  */
-export type ActionTypes = GetAccountOptionsAction | GetAccountOptionsErrorAction | GetAccountOptionsErrorAction
-| UpdateAccountOptionsAction | UpdateAccountOptionsErrorAction | UpdateAccountOptionsErrorAction;
+export type ActionTypes = GetAccountOptionsAction | GetAccountOptionsSuccessAction | GetAccountOptionsErrorAction
+| UpdateAccountOptionsAction | UpdateAccountOptionsSuccessAction | UpdateAccountOptionsErrorAction;
