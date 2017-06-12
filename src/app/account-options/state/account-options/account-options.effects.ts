@@ -12,7 +12,7 @@ import * as accountOptionsActions from './account-options.actions';
  * Handles account options side-effects (async API communication requests).
  */
 @Injectable()
-export class UsersEffects {
+export class AccountOptionsEffects {
 
   @Effect() getApiCall = this.actions
   .ofType(accountOptionsActions.GET_ACCOUNT_OPTIONS)
