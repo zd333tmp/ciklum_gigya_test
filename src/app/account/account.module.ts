@@ -1,12 +1,12 @@
-import { AccountOptionsStateStoreDealer } from './state/account-options.state-store-dealer';
+import { AccountStateStoreDealer } from './state/account.state-store-dealer';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EffectsModule } from '@ngrx/effects';
-import { AccountOptionsApiService } from './shared/account-options-api.service';
+import { AccountApiService } from './shared/account-api.service';
 import { AccountOptionsEffects } from './state/account-options/account-options.effects';
 
 /**
- * Account options feature module.
+ * Account feature module.
  */
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import { AccountOptionsEffects } from './state/account-options/account-options.e
   ],
   declarations: [],
   providers: [
-    AccountOptionsApiService,
-    AccountOptionsStateStoreDealer
+    AccountApiService,
+    AccountStateStoreDealer
   ]
 })
-export class AccountOptionsModule { }
+export class AccountModule { }

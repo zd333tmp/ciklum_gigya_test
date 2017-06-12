@@ -11,21 +11,21 @@ import * as readonlyModeActions from './readonly-mode/readonly-mode.actions';
  * Isolates store logic from component layer.
  */
 @Injectable()
-export class AccountOptionsStateStoreDealer {
+export class AccountStateStoreDealer {
 
-  private accountOptionsSubState$ = this.store.select(state => state.accountOptions);
+  private accountSubState$ = this.store.select(state => state.accountOptions);
 
   // Stream queries/selectors for component layer
-  readonly accountOptions$ = this.accountOptionsSubState$
-    .map(accountOptionsSubState => accountOptionsSubState.accountOptions);
-  readonly error$ = this.accountOptionsSubState$
-    .map(accountOptionsSubState => accountOptionsSubState.error);
-  readonly isFetching$ = this.accountOptionsSubState$
-    .map(accountOptionsSubState => accountOptionsSubState.isFetching);
-  readonly isSaving$ = this.accountOptionsSubState$
-    .map(accountOptionsSubState => accountOptionsSubState.isSaving);
+  readonly accountOptions$ = this.accountSubState$
+    .map(accountSubState => accountSubState.accountOptions);
+  readonly error$ = this.accountSubState$
+    .map(accountSubState => accountSubState.error);
+  readonly isFetching$ = this.accountSubState$
+    .map(accountSubState => accountSubState.isFetching);
+  readonly isSaving$ = this.accountSubState$
+    .map(accountSubState => accountSubState.isSaving);
   // Funny tautology :)
-  readonly readonlyMode$ = this.store.select(state => state.accountOptionsReadonlyMode)
+  readonly readonlyMode$ = this.store.select(state => state.accountReadonlyMode)
     .map(readonlyModeSubState => readonlyModeSubState.readonlyMode);
 
   constructor(private store: Store<AppState>) { }

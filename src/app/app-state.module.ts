@@ -3,8 +3,8 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { RouterState, routerReducer, RouterStoreModule } from '@ngrx/router-store';
-import { accountOptionsReducer, AccountOptionsState } from './account-options/state/account-options/account-options.reducer';
-import { readonlyModeReducer, ReadonlyModeState } from './account-options/state/readonly-mode/readonly-mode.reducer';
+import { accountOptionsReducer, AccountOptionsState } from './account/state/account-options/account-options.reducer';
+import { readonlyModeReducer, ReadonlyModeState } from './account/state/readonly-mode/readonly-mode.reducer';
 
 /**
  * Root App state.
@@ -14,7 +14,7 @@ import { readonlyModeReducer, ReadonlyModeState } from './account-options/state/
 export interface AppState {
   router: RouterState;
   accountOptions: AccountOptionsState;
-  accountOptionsReadonlyMode: ReadonlyModeState;
+  accountReadonlyMode: ReadonlyModeState;
 }
 
 /**
@@ -25,7 +25,7 @@ export interface AppState {
     StoreModule.provideStore({
       router: routerReducer,
       accountOptions: accountOptionsReducer,
-      accountOptionsReadonlyMode: readonlyModeReducer,
+      accountReadonlyMode: readonlyModeReducer,
     }),
     RouterStoreModule.connectRouter(),
     // Needed only in dev mode for state debugging purposes

@@ -10,14 +10,14 @@ import { AccountOptions } from './account-options.model';
  * and converting incoming and outgoing data in corresponding formats.
  */
 @Injectable()
-export class AccountOptionsApiService {
+export class AccountApiService {
 
   constructor(private http: Http) { }
 
   /**
    * Makes API call to retrieve account options.
    */
-  get(): Observable<AccountOptions> {
+  fetchAccountOptions(): Observable<AccountOptions> {
     // TODO: implement and get rid of `Observable.of` import
     return Observable.of(null);
   }
@@ -26,7 +26,7 @@ export class AccountOptionsApiService {
    * Makes API call to update account options.
    * TODO: consider using useful data from success response (instead of empty observable)
    */
-  update(newAccountOptions: AccountOptions): Observable<any> {
+  updateAccountOptions(newAccountOptions: AccountOptions): Observable<any> {
     // TODO: implement and get rid of `Observable.of` import
     return Observable.of();
   }
