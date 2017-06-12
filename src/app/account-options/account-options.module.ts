@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { AccountOptionsApiService } from './shared/account-options-api.service';
 
 /**

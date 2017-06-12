@@ -35,6 +35,7 @@ export class GetAccountOptionsErrorAction implements Action {
  */
 export class UpdateAccountOptionsAction implements Action {
   readonly type = UPDATE_ACCOUNT_OPTIONS;
+  constructor(public payload: AccountOptions) { }
 }
 /**
  * Update account options finished successfully action
