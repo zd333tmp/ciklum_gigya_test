@@ -10,20 +10,20 @@ export const UPDATE_ACCOUNT_OPTIONS_SUCCESS = '[Account options] Update success'
 export const UPDATE_ACCOUNT_OPTIONS_ERROR = '[Account options] Update error';
 
 /**
- * Get account options begin action
+ * Get account options begin action.
  */
 export class GetAccountOptionsAction implements Action {
   readonly type = GET_ACCOUNT_OPTIONS;
 }
 /**
- * Get account options finished successfully action
+ * Get account options finished successfully action.
  */
 export class GetAccountOptionsSuccessAction implements Action {
   readonly type = GET_ACCOUNT_OPTIONS_SUCCESS;
   constructor(public payload: AccountOptions) { }
 }
 /**
- * Get account options finished with error action
+ * Get account options finished with error action.
  */
 export class GetAccountOptionsErrorAction implements Action {
   readonly type = GET_ACCOUNT_OPTIONS_ERROR;
@@ -31,21 +31,21 @@ export class GetAccountOptionsErrorAction implements Action {
 }
 
 /**
- * Update account options begin action
+ * Update account options begin action.
  */
 export class UpdateAccountOptionsAction implements Action {
   readonly type = UPDATE_ACCOUNT_OPTIONS;
   constructor(public payload: AccountOptions) { }
 }
 /**
- * Update account options finished successfully action
+ * Update account options finished successfully action.
  */
 export class UpdateAccountOptionsSuccessAction implements Action {
   readonly type = UPDATE_ACCOUNT_OPTIONS_SUCCESS;
   constructor(public payload: AccountOptions) { }
 }
 /**
- * Update account options finished with error action
+ * Update account options finished with error action.
  */
 export class UpdateAccountOptionsErrorAction implements Action {
   readonly type = UPDATE_ACCOUNT_OPTIONS_ERROR;
@@ -53,7 +53,7 @@ export class UpdateAccountOptionsErrorAction implements Action {
 }
 
 /**
- * All available sub-state action creators type union
+ * All available sub-state action creators types union.
  */
 export type ActionTypes = GetAccountOptionsAction | GetAccountOptionsSuccessAction | GetAccountOptionsErrorAction
 | UpdateAccountOptionsAction | UpdateAccountOptionsSuccessAction | UpdateAccountOptionsErrorAction;

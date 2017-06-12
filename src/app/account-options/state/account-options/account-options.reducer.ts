@@ -2,7 +2,7 @@ import * as accountOptionsActions from './account-options.actions';
 import { AccountOptions } from '../../shared/account-options.model';
 
 /**
- * Describes account options sub-state
+ * Describes account options sub-state.
  */
 export interface AccountOptionsState {
   accountOptions: AccountOptions;
@@ -22,47 +22,47 @@ const initialState: AccountOptionsState = {
 
 export function accountOptionsReducer(state = initialState, action: accountOptionsActions.ActionTypes): AccountOptionsState {
   switch (action.type) {
-  // None or unknown action
-  default:
-    return state;
-  // Get actions
-  case accountOptionsActions.GET_ACCOUNT_OPTIONS:
-    return {
-    ...state,
-    isFetching: true,
-    accountOptions: null,
-    error: null
-    };
-  case accountOptionsActions.GET_ACCOUNT_OPTIONS_SUCCESS:
-    return {
-    ...state,
-    isFetching: false,
-    accountOptions: action.payload
-    };
-  case accountOptionsActions.GET_ACCOUNT_OPTIONS_ERROR:
-    return {
-    ...state,
-    isFetching: false,
-    error: action.payload.error
-    };
-  // Update actions
-  case accountOptionsActions.UPDATE_ACCOUNT_OPTIONS:
-    return {
-    ...state,
-    isSaving: true,
-    error: null
-    };
-  case accountOptionsActions.UPDATE_ACCOUNT_OPTIONS_SUCCESS:
-    return {
-    ...state,
-    isSaving: false,
-    accountOptions: action.payload
-    };
-  case accountOptionsActions.UPDATE_ACCOUNT_OPTIONS_ERROR:
-    return {
-    ...state,
-    isSaving: false,
-    error: action.payload.error
-    };
+    // None or unknown action
+    default:
+      return state;
+    // Get actions
+    case accountOptionsActions.GET_ACCOUNT_OPTIONS:
+      return {
+        ...state,
+        isFetching: true,
+        accountOptions: null,
+        error: null
+      };
+    case accountOptionsActions.GET_ACCOUNT_OPTIONS_SUCCESS:
+      return {
+        ...state,
+        isFetching: false,
+        accountOptions: action.payload
+      };
+    case accountOptionsActions.GET_ACCOUNT_OPTIONS_ERROR:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.payload.error
+      };
+    // Update actions
+    case accountOptionsActions.UPDATE_ACCOUNT_OPTIONS:
+      return {
+        ...state,
+        isSaving: true,
+        error: null
+      };
+    case accountOptionsActions.UPDATE_ACCOUNT_OPTIONS_SUCCESS:
+      return {
+        ...state,
+        isSaving: false,
+        accountOptions: action.payload
+      };
+    case accountOptionsActions.UPDATE_ACCOUNT_OPTIONS_ERROR:
+      return {
+        ...state,
+        isSaving: false,
+        error: action.payload.error
+      };
   }
 }
