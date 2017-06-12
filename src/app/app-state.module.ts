@@ -1,4 +1,3 @@
-import { AccountOptions } from './account-options/shared/account-options.model';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -14,7 +13,7 @@ import { readonlyModeReducer, ReadonlyModeState } from './account-options/state/
  */
 export interface AppState {
   router: RouterState;
-  accountOptions: AccountOptions;
+  accountOptions: AccountOptionsState;
   accountOptionsReadonlyMode: ReadonlyModeState;
 }
 
