@@ -1,0 +1,943 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gigya documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gigya documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">gigya documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AccountModule.html" >AccountModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/AppRoutingModule.html" >AppRoutingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/AppStateModule.html" >AppStateModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/CoreModule.html" >CoreModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/SharedModule.html" >SharedModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AccountOptionsContainerComponent.html"  data-type="entity-link" class="active" >AccountOptionsContainerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/AccountOptionsFormComponent.html" >AccountOptionsFormComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/HeaderComponent.html" >HeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SpinnerComponent.html" >SpinnerComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/AccountOptions.html" >AccountOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/CustomQueryEncoder.html" >CustomQueryEncoder</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DisableReadonlyModeAction.html" >DisableReadonlyModeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EnableReadonlyModeAction.html" >EnableReadonlyModeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GetAccountOptionsAction.html" >GetAccountOptionsAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GetAccountOptionsErrorAction.html" >GetAccountOptionsErrorAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GetAccountOptionsSuccessAction.html" >GetAccountOptionsSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UpdateAccountOptionsAction.html" >UpdateAccountOptionsAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UpdateAccountOptionsErrorAction.html" >UpdateAccountOptionsErrorAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UpdateAccountOptionsSuccessAction.html" >UpdateAccountOptionsSuccessAction</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/AccountApiService.html" >AccountApiService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/AccountOptionsEffects.html" >AccountOptionsEffects</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/AccountStateStoreDealer.html" >AccountStateStoreDealer</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">gigya documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AccountModule.html" >AccountModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/AppRoutingModule.html" >AppRoutingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/AppStateModule.html" >AppStateModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/CoreModule.html" >CoreModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/SharedModule.html" >SharedModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AccountOptionsContainerComponent.html"  data-type="entity-link" class="active" >AccountOptionsContainerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/AccountOptionsFormComponent.html" >AccountOptionsFormComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/HeaderComponent.html" >HeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SpinnerComponent.html" >SpinnerComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/AccountOptions.html" >AccountOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/CustomQueryEncoder.html" >CustomQueryEncoder</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DisableReadonlyModeAction.html" >DisableReadonlyModeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EnableReadonlyModeAction.html" >EnableReadonlyModeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GetAccountOptionsAction.html" >GetAccountOptionsAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GetAccountOptionsErrorAction.html" >GetAccountOptionsErrorAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GetAccountOptionsSuccessAction.html" >GetAccountOptionsSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UpdateAccountOptionsAction.html" >UpdateAccountOptionsAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UpdateAccountOptionsErrorAction.html" >UpdateAccountOptionsErrorAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UpdateAccountOptionsSuccessAction.html" >UpdateAccountOptionsSuccessAction</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/AccountApiService.html" >AccountApiService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/AccountOptionsEffects.html" >AccountOptionsEffects</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/AccountStateStoreDealer.html" >AccountStateStoreDealer</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AccountOptionsContainerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/account/account-options-container/account-options-container.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Smart container for account options.<br/>Is expected to be route destination.<br/>Is aware of service layer (store state dealer in our case).<br/>Rules data between dumb components and service (state) layer.<br/>Works with streams.</p><br/>
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnDestroy-interface.html" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>gig-account-options-container</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>account-options-container.component.styl</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./account-options-container.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(activatedRoute: any, accountStateStoreDealer: <a href="../injectables/AccountStateStoreDealer.html">AccountStateStoreDealer</a>)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:33</a></div>
+                            </td>
+                        </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> ngOnInit</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:39</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> onAccountOptionsUpdate</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>onAccountOptionsUpdate(form: any)</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:68</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Converts passed form to account options model and makes request to save it.</p><br/></div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> ngOnDestroy</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnDestroy()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:83</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="inputs">
+                Properties
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> accountOptions</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>accountOptions:     <code><a href="../classes/AccountOptions.html" target="_self" >AccountOptions</a></code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:28</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> error</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>error:     <code>string</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:30</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> isFetching</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>isFetching:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:31</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> isSaving</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>isSaving:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:32</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> loginIdentifierConflictChoices</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>loginIdentifierConflictChoices:     <code>string[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:29</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> readonlyMode</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>readonlyMode:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:33</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> takeUntil$</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>takeUntil$:     <code>any</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/account/account-options-container/account-options-container.component.ts:26</a></div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>Used to complete streams and clean up subscriptions</p><br/></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { FormGroup } from &#x27;@angular/forms&#x27;;
+import { Subject } from &#x27;rxjs/Subject&#x27;;
+import &#x27;rxjs/add/operator/takeUntil&#x27;;
+import { AccountOptions } from &#x27;../shared/account-options.model&#x27;;
+import { AccountStateStoreDealer } from &#x27;../state/account.state-store-dealer&#x27;;
+
+/**
+ * Smart container for account options.
+ * Is expected to be route destination.
+ * Is aware of service layer (store state dealer in our case).
+ * Rules data between dumb components and service (state) layer.
+ * Works with streams.
+ */
+@Component({
+  selector: &#x27;gig-account-options-container&#x27;,
+  templateUrl: &#x27;./account-options-container.component.html&#x27;,
+  styleUrls: [&#x27;./account-options-container.component.styl&#x27;]
+})
+export class AccountOptionsContainerComponent implements OnInit, OnDestroy {
+
+  /**
+   * Used to complete streams and clean up subscriptions
+   */
+  private takeUntil$ &#x3D; new Subject();
+
+  accountOptions: AccountOptions;
+  loginIdentifierConflictChoices: Array&lt;string&gt;;
+  error: string;
+  isFetching: boolean;
+  isSaving: boolean;
+  readonlyMode: boolean;
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private accountStateStoreDealer: AccountStateStoreDealer) { }
+
+  ngOnInit() {
+    // Request data
+    this.accountStateStoreDealer.getAccountOptions();
+
+    // Check readonly data param in route which opened component
+    // Note even although the same single current component is used in both read-only and regular routes
+    // component is re-instantiated after navigation between this routes.
+    // So we don&#x27;t need stream subscription on data params updates
+    const readonly &#x3D; Boolean(this.activatedRoute.snapshot.data.readonly);
+    this.accountStateStoreDealer.changeReadonlyMode(readonly);
+
+    // Subscribe on data stream
+    // Optionally this can be done in template via async pipe (so that no need to handle completions/un-subscriptions)
+    // But I don&#x27;t like too much magic in templates :)
+    this.accountStateStoreDealer.accountOptionsDataQuery$
+      .takeUntil(this.takeUntil$)
+      .subscribe(accountOptionsData &#x3D;&gt; {
+        this.accountOptions &#x3D; accountOptionsData.accountOptions;
+        this.loginIdentifierConflictChoices &#x3D; accountOptionsData.loginIdentifierConflictChoices;
+        this.error &#x3D; accountOptionsData.error;
+        this.isFetching &#x3D; accountOptionsData.isFetching;
+        this.isSaving &#x3D; accountOptionsData.isSaving;
+        this.readonlyMode &#x3D; accountOptionsData.readonlyMode;
+      });
+  }
+
+  /**
+   * Converts passed form to account options model and makes request to save it.
+   */
+  onAccountOptionsUpdate(form: FormGroup) {
+    // Simple proto check just in case
+    if (!(form instanceof FormGroup)) {
+      // TODO: consider dispatching error action here
+      return;
+    }
+    // Create raw object
+    const rawAccountOptionsObject &#x3D; {};
+    Object.keys(form.controls)
+      .forEach(key &#x3D;&gt; {
+        rawAccountOptionsObject[key] &#x3D; form.controls[key].value;
+      });
+    this.accountStateStoreDealer.updateAccountOptions(new AccountOptions(rawAccountOptionsObject));
+  }
+
+  ngOnDestroy() {
+    // Run signal to complete data streams
+    this.takeUntil$.next();
+    // Complete subject itself
+    this.takeUntil$.unsubscribe();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--Spinner (preloader)--&gt;
+&lt;gig-spinner *ngIf&#x3D;&quot;isFetching || isSaving&quot;&gt;&lt;/gig-spinner&gt;
+
+&lt;!--Account options form--&gt;
+&lt;gig-account-options-form [accountOptions]&#x3D;&quot;accountOptions&quot;
+  [disabled]&#x3D;&quot;readonlyMode || isFetching || isSaving&quot;
+  [loginIdentifierConflictChoices]&#x3D;&quot;loginIdentifierConflictChoices&quot;
+  [errorMessage]&#x3D;&quot;error&quot;
+  (accountOptionsUpdate)&#x3D;&quot;onAccountOptionsUpdate($event)&quot;&gt;&lt;/gig-account-options-form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--Spinner (preloader)--><gig-spinner *ngIf="isFetching || isSaving"></gig-spinner><!--Account options form--><gig-account-options-form [accountOptions]="accountOptions"  [disabled]="readonlyMode || isFetching || isSaving"  [loginIdentifierConflictChoices]="loginIdentifierConflictChoices"  [errorMessage]="error"  (accountOptionsUpdate)="onAccountOptionsUpdate($event)"></gig-account-options-form></div>'
+    var COMPONENTS = [{'name': 'AccountOptionsContainerComponent', 'selector': 'gig-account-options-container'},{'name': 'AccountOptionsFormComponent', 'selector': 'gig-account-options-form'},{'name': 'AppComponent', 'selector': 'gig-root'},{'name': 'HeaderComponent', 'selector': 'gig-header'},{'name': 'SpinnerComponent', 'selector': 'gig-spinner'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AccountOptionsContainerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
