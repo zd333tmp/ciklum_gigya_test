@@ -1,3 +1,22 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Gigya test</a>
+    </div>
+
+    <div>
+      <ul class="nav navbar-nav">
+        <li [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }">
+          <a routerLink="">Account options</a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+          <a routerLink="/readonly">Account options (readonly)</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
