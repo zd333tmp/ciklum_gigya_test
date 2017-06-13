@@ -1,9 +1,0 @@
-<!--Spinner (preloader)-->
-<gig-spinner *ngIf="isFetching || isSaving"></gig-spinner>
-
-<!--Account options form-->
-<gig-account-options-form [accountOptions]="accountOptions"
-  [disabled]="readonlyMode || isFetching || isSaving"
-  [loginIdentifierConflictChoices]="loginIdentifierConflictChoices"
-  [errorMessage]="error"
-  (accountOptionsUpdate)="onAccountOptionsUpdate($event)"></gig-account-options-form>
