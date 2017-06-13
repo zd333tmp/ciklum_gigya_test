@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { EffectsModule } from '@ngrx/effects';
 import { AccountApiService } from './shared/account-api.service';
 import { AccountOptionsEffects } from './state/account-options/account-options.effects';
+import { AccountOptionsContainerComponent } from './account-options-container/account-options-container.component';
 
 /**
  * Account feature module.
@@ -13,7 +14,7 @@ import { AccountOptionsEffects } from './state/account-options/account-options.e
     CommonModule,
     EffectsModule.run(AccountOptionsEffects)
   ],
-  declarations: [],
+  declarations: [AccountOptionsContainerComponent],
   providers: [
     AccountApiService,
     AccountStateStoreDealer

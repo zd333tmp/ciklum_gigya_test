@@ -10,6 +10,9 @@ import { readonlyModeReducer, ReadonlyModeState } from './account/state/readonly
  * Root App state.
  * Collects pieces of state from different feature modules (from only one module in our case).
  * Also houses some root state pieces like session status, etc. (only router state in our case).
+ * If we had root state pieces - the it would be defined in `src/app/state` folder.
+ * Each state piece would be defined with actions, reducers and (optionally) side-effects.
+ * Also there could be `RootStateStoreDealerService` (see account module state as example).
  */
 export interface AppState {
   router: RouterState;
@@ -18,7 +21,7 @@ export interface AppState {
 }
 
 /**
- * Provides root app state (combined from all feature parts).
+ * Provides root app state (combined from all state pieces).
  */
 @NgModule({
   imports: [
