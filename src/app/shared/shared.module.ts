@@ -4,12 +4,17 @@ import { SpinnerComponent } from './spinner/spinner.component';
 
 /**
  * Houses common items (filters, directives, components) which are reused across multiple application parts.
- * Place common dumb (representational) widget components here!
+ * Place common dumb widget components here!
  */
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [SpinnerComponent]
+  declarations: [
+    SpinnerComponent
+  ],
+  exports: [
+    SpinnerComponent
+  ]
 })
 export class SharedModule { }

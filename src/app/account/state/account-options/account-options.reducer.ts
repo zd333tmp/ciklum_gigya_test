@@ -11,13 +11,24 @@ export interface AccountOptionsState {
   // The same state property for get and update errors
   // TODO: consider splitting to dedicated error properties
   error: string;
+  loginIdentifierConflictChoices: Array<string>;
 };
 
 const initialState: AccountOptionsState = {
   accountOptions: null,
   isFetching: false,
   isSaving: false,
-  error: ''
+  error: '',
+  // TODO: I couldn't find out how do I get choices for that field
+  // (know only one valid value from API get response)
+  // Thus use a static stub with dummy values
+  // This should be fine for test app
+  loginIdentifierConflictChoices: [
+    'failOnSiteConflictingIdentity',
+    'dummyIncorrectValue1',
+    'dummyIncorrectValue2',
+    'dummyIncorrectValue3'
+  ]
 };
 
 export function accountOptionsReducer(state = initialState, action: accountOptionsActions.ActionTypes): AccountOptionsState {

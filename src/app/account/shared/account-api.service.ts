@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/delay';
 import 'rxjs/add/observable/of';
 import { AccountOptions } from './account-options.model';
 
@@ -19,7 +20,7 @@ export class AccountApiService {
    */
   fetchAccountOptions(): Observable<AccountOptions> {
     // TODO: implement and get rid of `Observable.of` import
-    return Observable.of(null);
+    return Observable.of(null).delay(500);
   }
 
   /**
@@ -28,6 +29,6 @@ export class AccountApiService {
    */
   updateAccountOptions(newAccountOptions: AccountOptions): Observable<any> {
     // TODO: implement and get rid of `Observable.of` import
-    return Observable.of();
+    return Observable.of(null).delay(500);
   }
 }

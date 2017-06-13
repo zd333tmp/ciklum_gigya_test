@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 /**
- * Static page header dumb (representational) component.
+ * Static page header dumb component.
  */
 @Component({
   selector: 'gig-header',

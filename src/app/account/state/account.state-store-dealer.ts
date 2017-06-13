@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/combineLatest';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../app-state.module';
 import { AccountOptions } from '../shared/account-options.model';
@@ -13,34 +15,34 @@ import * as readonlyModeActions from './readonly-mode/readonly-mode.actions';
 @Injectable()
 export class AccountStateStoreDealer {
 
-  private accountSubState$ = this.store.select(state => state.accountOptions);
-
-  // Stream queries/selectors for component layer
-  readonly accountOptions$ = this.accountSubState$
-    .map(accountSubState => accountSubState.accountOptions);
-  readonly error$ = this.accountSubState$
-    .map(accountSubState => accountSubState.error);
-  readonly isFetching$ = this.accountSubState$
-    .map(accountSubState => accountSubState.isFetching);
-  readonly isSaving$ = this.accountSubState$
-    .map(accountSubState => accountSubState.isSaving);
-  // Funny tautology :)
-  readonly readonlyMode$ = this.store.select(state => state.accountReadonlyMode)
-    .map(readonlyModeSubState => readonlyModeSubState.readonlyMode);
+  // Stream queries/selectors for component layer go here
+  // This particular selector is pretty trivial
+  // But in real app they would be composable queries that combine different pieces of data
+  // (e.g. nest related entities, etc.)
+  readonly accountOptionsDataQuery$ = Observable.combineLatest(
+    this.store.select(state => state.accountOptions),
+    this.store.select(state => state.accountReadonlyMode)
+  )
+    .map(([accountOptionsSubState, readonlyModeSubState]) => {
+      return {
+        ...accountOptionsSubState,
+        ...readonlyModeSubState
+      };
+    });
 
   constructor(private store: Store<AppState>) { }
 
   /**
    * Dispatches action to retrieve account options.
    */
-  getAccountActions() {
+  getAccountOptions() {
     this.store.dispatch(new accountOptionsActions.GetAccountOptionsAction());
   }
 
   /**
    * Dispatches action to update account options.
    */
-  updateAccountActions(newAccountOptions: AccountOptions) {
+  updateAccountOptions(newAccountOptions: AccountOptions) {
     this.store.dispatch(new accountOptionsActions.UpdateAccountOptionsAction(newAccountOptions));
   }
 
