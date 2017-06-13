@@ -34,7 +34,8 @@ const rootRoutes: Routes = [
  */
 @NgModule({
   imports: [
-    RouterModule.forRoot(rootRoutes)
+    // Using hash location strategy because app will be deployed to GitHub Pages
+    RouterModule.forRoot(rootRoutes, { useHash: true })
   ],
   exports: [
     RouterModule
