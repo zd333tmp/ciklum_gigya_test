@@ -37,7 +37,7 @@ export class AccountOptionsFormComponent {
   };
 
   // Some simple field validators as an example
-  // TODO: implement better validation if needed
+  // TODO: implement better validation
   form = this.fb.group({
     verifyEmail: [false, Validators.required],
     verifyProviderEmail: [false, Validators.required],

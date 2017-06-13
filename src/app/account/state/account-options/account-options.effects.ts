@@ -19,8 +19,7 @@ export class AccountOptionsEffects {
   .switchMap(() => {
     return this.accountApiService.fetchAccountOptions()
       .map(accountOptions => new accountOptionsActions.GetAccountOptionsSuccessAction(accountOptions))
-      // TODO: check if response falls into real error (if not - move error logic to success handler)
-      .catch(error => Observable.of(new accountOptionsActions.GetAccountOptionsErrorAction({ error: error.errorMessage })));
+      .catch(error => Observable.of(new accountOptionsActions.GetAccountOptionsErrorAction({ error: error.message })));
   });
 
   @Effect() updateApiCall = this.actions
@@ -30,8 +29,7 @@ export class AccountOptionsEffects {
     const newAccountOptions = act.payload;
     return this.accountApiService.updateAccountOptions(newAccountOptions)
       .map(() => new accountOptionsActions.UpdateAccountOptionsSuccessAction(newAccountOptions))
-      // TODO: check if response falls into real error (if not - move error logic to success handler)
-      .catch(error => Observable.of(new accountOptionsActions.UpdateAccountOptionsErrorAction({ error: error.errorMessage })));
+      .catch(error => Observable.of(new accountOptionsActions.UpdateAccountOptionsErrorAction({ error: error.message })));
   });
 
   constructor(

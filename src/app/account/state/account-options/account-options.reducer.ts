@@ -19,15 +19,15 @@ const initialState: AccountOptionsState = {
   isFetching: false,
   isSaving: false,
   error: '',
-  // TODO: I couldn't find out how do I get choices for that field
-  // (know only one valid value from API get response)
-  // Thus use a static stub with dummy values
-  // This should be fine for test app
+  // TODO: I couldn't find out how do I get all available choices for that field.
+  // Thus use static list.
+  // Couple values are valid (observed in API response during testing).
+  // And one invalid (as an example).
+  // This should be fine for test app.
   loginIdentifierConflictChoices: [
     'failOnSiteConflictingIdentity',
-    'dummyIncorrectValue1',
-    'dummyIncorrectValue2',
-    'dummyIncorrectValue3'
+    'ignore',
+    'SomeDummyInvalidChoice'
   ]
 };
 
@@ -41,7 +41,6 @@ export function accountOptionsReducer(state = initialState, action: accountOptio
       return {
         ...state,
         isFetching: true,
-        accountOptions: null,
         error: null
       };
     case accountOptionsActions.GET_ACCOUNT_OPTIONS_SUCCESS:
@@ -54,6 +53,7 @@ export function accountOptionsReducer(state = initialState, action: accountOptio
       return {
         ...state,
         isFetching: false,
+        accountOptions: null,
         error: action.payload.error
       };
     // Update actions

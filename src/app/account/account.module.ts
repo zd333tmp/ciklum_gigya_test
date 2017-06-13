@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { JsonpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EffectsModule } from '@ngrx/effects';
 import { SharedModule } from '../shared/shared.module';
@@ -15,6 +16,7 @@ import { AccountOptionsFormComponent } from './account-options-form/account-opti
 @NgModule({
   imports: [
     CommonModule,
+    JsonpModule,
     ReactiveFormsModule,
     EffectsModule.run(AccountOptionsEffects),
     SharedModule

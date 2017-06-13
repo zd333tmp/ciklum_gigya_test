@@ -2,7 +2,8 @@
  * Account options model.
  * Constructor takes raw object (received from back-end API) and saves all fields to private properties.
  * All properties are exposed via getters to ensure immutability.
- * TODO: getters are not best choice (a lot of boilerplate code), consider refactoring with `immutable.js`
+ * TODO: getters are not best choice, consider refactoring with `immutable.js`
+ * A lot of boilerplate code, but ok for test app.
  */
 export class AccountOptions {
   private _verifyEmail: boolean;
