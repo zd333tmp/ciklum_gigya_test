@@ -5,6 +5,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { AccountApiService } from './shared/account-api.service';
 import { AccountOptionsEffects } from './state/account-options/account-options.effects';
 import { AccountOptionsContainerComponent } from './account-options-container/account-options-container.component';
+import { AccountOptionsFormComponent } from './account-options-form/account-options-form.component';
 
 /**
  * Account feature module.
@@ -14,10 +15,16 @@ import { AccountOptionsContainerComponent } from './account-options-container/ac
     CommonModule,
     EffectsModule.run(AccountOptionsEffects)
   ],
-  declarations: [AccountOptionsContainerComponent],
+  declarations: [
+    AccountOptionsContainerComponent,
+    AccountOptionsFormComponent
+  ],
   providers: [
     AccountApiService,
     AccountStateStoreDealer
+  ],
+  exports: [
+    AccountOptionsContainerComponent
   ]
 })
 export class AccountModule { }
