@@ -1,28 +1,42 @@
-# Gigya
+# Gigya Test Appp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
+Generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
+Uses [ngrx solutions](https://github.com/ngrx) for state management.
 
-## Development server
+## Development Env
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Prepare environment:
 
-## Code scaffolding
+1. be sure to have node (7.6 or later), npm (4.1 or later) and Yarn (0.21 or later) installed
+1. `npm install -g @angular/cli@1.X`
+1. `ng set --global packageManager=yarn`
+1. `yarn install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Use next command in dev mode:
+
+* `ng serve` for a dev server, then navigate to `http://localhost:4200/`
+* `ng lint` to lint sources
+* `ng test` to run tests
+
+Using state dev tools (including time travel debugging ;) ):
+
+1. download and install the [Redux Devtools Extension](http://extension.remotedev.io/)
+1. run app in dev mode and launch extension, then enjoy the magic
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+1. prepare environment (steps 1-3 [Development Env section](#development-env))
+1. `rm -rf node_modules`
+1. `yarn install`
+1. define API connection details in *src/environments/environment.prod.ts*
+1. `ng build --prod`
+1. pick-up result artifact at *dist* folder
 
-## Running unit tests
+## Documentation Auto Generation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Be sure to have **compodoc** globally installed (`npm install -g @compodoc/compodoc`).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. `rm -rf documentation`
+1. `mkdir documentation`
+1. `compodoc -p tsconfig.json`
+1. pick-up result artifact at *documentation* folder
