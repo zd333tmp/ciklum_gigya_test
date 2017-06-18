@@ -1,4 +1,4 @@
-# Gigya Test Appp
+# Gigya Test App
 
 Generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 Uses [ngrx solutions](https://github.com/ngrx) for state management.
@@ -12,7 +12,7 @@ Prepare environment:
 1. `ng set --global packageManager=yarn`
 1. `yarn install`
 
-Use next command in dev mode:
+Use next commands in dev mode:
 
 * `ng serve` for a dev server, then navigate to `http://localhost:4200/`
 * `ng lint` to lint sources
